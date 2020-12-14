@@ -1,0 +1,25 @@
+.search-form {
+    margin: 20px 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    
+    
+    
+}
+.search-form input{
+    background-color: var(--grey1);
+    border-radius: 20px;
+    padding: 10px;
+    opacity: 0.5;
+    background-color: var(--grey1);
+    width: 400px;
+    margin-left: 5px;
+    transition: all 1s ease;
+}
+
+.search-form  :focus {
+    border: 2px solid var(--grey3);
+}

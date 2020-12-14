@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "reset.css";
+@import "variables.css";
+/*components*/
+@import "components/status-bar.css";
+@import "components/user-component.css";
+@import "components/nav-bar.css";
+@import "components/search-form.css";
+
+body {
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar__up a:first-child i{
+    color: black;
+}
+body{
+    
+    background-image: url('tigher5.png');
+}
+.user-component__text ~ span {
+    margin-left: 10px;
+}
+#splash-screen {
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    animation: hideSplashScreen 0.5s 4s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.koreamark{
+    margin-top: 136px;
+}
+.koreamark > img {
+    width: 250px;
+    height: 250px;
+    animation: jello-vertical 4s ease ;
+}
+@keyframes colorchange {
+    0%{
+    }
+    50%{
+        background-color: var(--red);
+    }
+    100%{
+        background-color: var(--grey);
+    }
+} 
+
+
+  @keyframes jello-vertical {
+    0% {
+    transform: translateY(-100px);
+    }
+    15% {
+                
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    20% {
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    25% {
+              transform: scale3d(0.85, 1.15, 1);
+              
+    }
+    32.5% {
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    37.5% {
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    50% {
+              transform: scale3d(1, 1, 1);
+    }
+      
+      65% {
+                transform: scale3d(0.75, 1.25, 1);
+      }
+      70% {
+                transform: scale3d(1.25, 0.75, 1);
+      }
+      75% {
+                transform: scale3d(0.85, 1.15, 1);
+      }
+      82.5% {
+                transform: scale3d(1.05, 0.95, 1);
+      }
+      87.5% {
+                transform: scale3d(0.95, 1.05, 1);
+      }
+      100% {
+                transform: scale3d(1, 1, 1);
+      }
+  }
+
+.loading {
+  
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: var(--red);
+  animation: spin 1s ease-in-out infinite;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+  

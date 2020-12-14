@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "reset.css";
+@import "variables.css";
+/*components*/
+@import "components/status-bar.css";
+@import "components/user-component.css";
+@import "components/nav-bar.css";
+
+.nav-bar__up a:last-child > i{
+    color:black;
+}
+.more-user {
+    margin: 10px 20px;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+}
+.user-component__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.user-component__title {
+    margin-bottom: 0;
+}
+.user-component__subtitle {
+    color: black;
+}
+div[class*="boxes"] {
+    display: flex;
+}
+.more-boxestop {
+    padding: 20px 5px;
+    background-color: rgba(248, 246, 246, 0.904);
+    margin: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--grey1);
+}
+.more-boxestop > div {
+width: 140px;
+height: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.more-boxestop div:nth-child(2) {
+    border-right: 2px solid var(--grey1);
+    border-left: 2px solid var(--grey1);
+}
+.more-boxestop i {
+    margin-bottom: 5px;
+}
+.more-boxestop:hover {
+    cursor: pointer;
+}
+.more-boxesbottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 30px;
+}
+.more-boxesbottom span {
+    color: var(--grey2);
+}
+.more-boxesbottom__box:hover span{
+    color: black;
+}
+.more-boxesbottom__box:hover{
+    
+    cursor: pointer;
+}
+.more-boxesbottom div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+.more-boxesbottom i {
+    margin-bottom: 5px;
+    opacity: 0.7;
+}
+body{
+    
+    background-image: url('tigher5.png');
+}
+
+.marquee {
+    padding: 10px 30px;
+}
+.marquee:hover {
+    cursor: pointer;
+}
+.marquee div {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+.marquee__big {
+    font-size: 20px;
+    font-weight: 600;
+    width: 140px;
+}
