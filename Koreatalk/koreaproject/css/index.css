@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "reset.css";
+@import "variables.css";
+/*components*/
+@import "components/status-bar.css";
+
+body {
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+.koreamark {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.koreamark > img {
+width: 250px;
+height: 250px;
+}
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+.welcome-header > h1{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.welcome-header > p {
+    width: 340px;
+    opacity: 0.5;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-form  input {
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+}
+.login-form input[required] {
+    margin:3px;
+    border: 2px solid var(--grey);
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+.login-form input[required]:hover {
+    background-color: var(--grey);
+    border: 5px solid white;
+}
+.login-form input[required]:focus {
+    border: 2px solid var(--red);
+}
+.login-form__submit {
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.login-form__submit:hover {
+    cursor: pointer;
+}
+.login-form__keepmesigned {
+    display: flex;
+    width: 355px;
+    margin-bottom: 30px;
+}
+.login-form__keepmesigned > span {
+    margin-right: 2px;
+}
+.login-form__keepmesigned input {
+    width: 15px;
+}

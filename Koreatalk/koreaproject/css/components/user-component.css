@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+body {
+    font-family: 'Crimson Text', serif;
+    
+}
+.page {
+    display: flex;
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 25px 5px 20px;
+}
+.header__left {
+    display: flex;
+    align-items: center;
+}
+.header__left span {
+font-size: 40px;
+font-weight: 700;
+}
+.header__right div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+}
+
+.user-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: all 0.7s ease;
+}
+.user-component:hover {
+    background-color: rgba(241, 241, 241, 0.925);
+}
+.user-component__column{
+    display: flex;
+    align-items: center;
+}
+
+.user-component__avatar {
+width: 60px;
+height: 60px;
+border-radius: 25px;
+margin-right: 20px;
+}
+.user-component__avatar:hover {
+    cursor: pointer;
+}
+
+
+.user-component__title {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.user-component__subtitle {
+    font-size:15px;
+    color: var(--grey3);
+}
+.user-component__avatar--xl {
+    height: 70px;
+    width: 70px;
+    border-radius: 30px;
+}
+.user-component__music {
+    border-radius: 15px;
+    width: 210px;
+    height: 15px;
+    border: 2px solid #00CD3C;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-component__music > span {
+    margin-right: 10px;
+    font-size: 13px;
+}
+.user-component__music > i {
+    color: #00CD3C;
+}
+.friends-screen {
+    display: flex;
+    flex-direction: column;
+}
+.friends-screen__bar {
+    margin: 10px 20px;
+    border-top: 2px solid rgba(189, 189, 189, 0.651);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+.friends-screen__bar > span {
+    color: var(--grey);
+    font-size: 15px;
+}
+.user-component__right ~ span {
+    margin-left: 5px;
+    color: var(--grey2);
+}
+.user-component__time {
+    font-size: 12px;
+    color: var(--grey2);
+}
+.user-component__right > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.user-component__howmany {
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-component__howmany span {
+    color: white;
+    position: relative;
+    bottom: 1px;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "reset.css";
+@import "variables.css";
+/*components*/
+@import "components/status-bar.css";
+@import "components/user-component.css";
+@import "components/search-form.css";
+
+body {
+    background-color: var(--red);
+    box-sizing: inherit;
+}
+.user-component{
+    transition: all 1s ease;
+}
+.user-component:hover {
+    background-color: inherit;
+}
+.user-component__text >div {
+    display: flex;
+}
+.user-component__text i {
+    padding: 5px 15px;
+}
+.user-component__text div div:first-child i {
+    padding-left: 0;
+}
+.user-component__text div> div:first-child i {
+    border-right: 2px solid var(--grey1);
+}
+.user-component__right div i{
+    margin: 0 5px;
+}
+.comment-balloon {
+    margin: 50px 10px;
+    padding: 5px;
+    background-color: var(--beige);
+    border-radius: 5px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+}
+.user-component {
+    justify-content: flex-start;
+}
+.user-main {
+    background-color: #BC7687;
+    box-shadow: 0 2px 0.5em 0.2em black;
+    justify-content: space-between;
+}
+.translate-hi {
+    color: var(--beige);
+    position: relative;
+    right: 115px;
+    top: 17px;
+}
+.translate-hello {
+    color: var(--beige);
+    position: relative;
+    right: 140px;
+    top: 17px;
+}
+.search-form {
+    position: absolute;
+    bottom: 0;
+}
+input[type="submit"] {
+    margin-left: 10px;
+    width: 110px;
+    transition: all 1s ease-in-out;
+}
+input[type="submit"]:hover {
+    background-color: var(--beige);
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+input[type="text"] {
+    transition: all 1s ease-out;
+}
+input[type="text"]:hover {
+    background-color: var(--beige);
+opacity: 0.8;
+}
+input[type="text"]:focus {
+    border: 3px solid var(--beige);
+    background-color: inherit;
+}
+
+.up1 {
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.up2 {
+    animation: slide-in-bottom 0.5s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
